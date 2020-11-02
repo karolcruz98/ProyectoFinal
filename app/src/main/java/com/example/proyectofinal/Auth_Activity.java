@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.widget.Button;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -21,6 +22,7 @@ public class Auth_Activity extends AppCompatActivity implements View.OnClickList
 
     private EditText emailEditText;
     private EditText passwordEditText;
+    private Button botnIngresar;
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
 
@@ -29,18 +31,26 @@ public class Auth_Activity extends AppCompatActivity implements View.OnClickList
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
+        firebaseAuth = FirebaseAuth.getInstance();
         emailEditText = (EditText)findViewById(R.id.email);
         passwordEditText = (EditText)findViewById(R.id.password);
+        botnIngresar =(Button) findViewById(R.id.btnIngresar);
         progressDialog = new ProgressDialog(this);
+        botnIngresar.setOnClickListener(this);
     }
 
-    public void loguearUsuario(View view){
+    private void loguearUsuario(){
         final String email = emailEditText.getText().toString().trim();
         String password = passwordEditText.getText().toString().trim();
 
         if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password)){
             Toast.makeText(this, "Por favor llene todos los campos", Toast.LENGTH_LONG).show();
             return;
+        }
+        if (TextUtils.isEmpty(password)){
+            Toast.makeText(this, "Por favor ingrese una contraseña", Toast.LENGTH_LONG).show();
+            return;
+
         }
             progressDialog.setMessage("Realizando consulta en línea...");
             progressDialog.show();
@@ -69,5 +79,14 @@ public class Auth_Activity extends AppCompatActivity implements View.OnClickList
                 progressDialog.dismiss();
             }
         });
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.btnIngresar:
+                loguearUsuario();
+                break;
+        }
     }
 }
