@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "241630049842",
+    "firebase_url": "https://proyectomoviles-eaf53.firebaseio.com",
+    "project_id": "proyectomoviles-eaf53",
+    "storage_bucket": "proyectomoviles-eaf53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241630049842:android:aef34a8dd551e63a96ee2b",
+        "android_client_info": {
+          "package_name": "com.example.proyectofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241630049842-8leusavrqup4s4jkugq4rij3tlg2hbvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRspzoq3Jn1_I3XudwcRnH-0FQPZrrdCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241630049842-8leusavrqup4s4jkugq4rij3tlg2hbvm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
