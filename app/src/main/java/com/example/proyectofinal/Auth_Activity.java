@@ -63,7 +63,7 @@ public class Auth_Activity extends AppCompatActivity implements View.OnClickList
                     int pos = email.indexOf("@");
                     String user = email.substring(0, pos);
                     Toast.makeText(Auth_Activity.this,"Bienvenido: " + user, Toast.LENGTH_LONG).show();
-                    Intent intencion = new Intent(getApplication(), Activity_Administrator.class);
+                    Intent intencion = new Intent(getApplication(), Encuesta.class);
                     intencion.putExtra(Activity_Administrator.user, user);
                     startActivity(intencion);
                     Toast.makeText(Auth_Activity.this,"Haz ingresado con exito",Toast.LENGTH_LONG).show();

@@ -10,7 +10,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".ProfesorAdmin"></activity>
+        <activity android:name=".CursoAdmin"></activity>
+        <activity android:name=".SalonAdmin" />
+        <activity android:name=".EstudianteAdmin" />
+        <activity android:name=".Encuesta" />
+        <activity android:name=".ProfesorAdmin" />
         <activity android:name=".Activity_Administrator" />
         <activity
             android:name=".Auth_Activity"
