@@ -3,16 +3,12 @@ package com.example.proyectofinal;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
-public class Activity_Administrator extends AppCompatActivity {
-
-    public static final String user = "names";
-    TextView txtUser;
+public class ProfesorAdmin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_administrator);
+        setContentView(R.layout.activity_profesor_admin);
     }
 }
