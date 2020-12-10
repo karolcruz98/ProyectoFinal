@@ -23,4 +23,23 @@ public class Activity_Administrator extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void estudiante(View v){
+        Intent i = new Intent(this, EstudianteAdmin.class);
+        startActivity(i);
+    }
+
+    public void salon(View v){
+        Intent i = new Intent(this, SalonAdmin.class);
+        startActivity(i);
+    }
+
+    public void curso(View v){
+        Intent i = new Intent(this, CursoAdmin.class);
+        startActivity(i);
+    }
+
+    public void logout(View v){
+        Intent i =  new Intent(this, Auth_Activity.class);
+        startActivity(i);
+    }
 }

@@ -34,11 +34,11 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
+        android:onClick="añadir"
         app:layout_constraintEnd_toStartOf="@+id/IBtnRead"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle"
-        app:srcCompat="@drawable/teacher"
-        tools:srcCompat="@android:drawable/ic_menu_add" />
+        app:srcCompat="@drawable/mas" />
 
     <ImageButton
         android:id="@+id/IBtnRead"
@@ -52,8 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/IBtnAdd"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle"
-        app:srcCompat="@drawable/student"
-        tools:srcCompat="@android:drawable/ic_menu_search" />
+        app:srcCompat="@drawable/usuario" />
 
     <ImageButton
         android:id="@+id/IBtnUpdate"
@@ -65,8 +64,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/classroom"
-        tools:srcCompat="@android:drawable/ic_menu_rotate" />
+        app:srcCompat="@drawable/expediente" />
 
     <ImageButton
         android:id="@+id/IBtnDelete"
@@ -81,8 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/IBtnUpdate"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/course"
-        tools:srcCompat="@android:drawable/ic_menu_delete" />
+        app:srcCompat="@drawable/borrar" />
 
     <TextView
         android:id="@+id/textView2"
